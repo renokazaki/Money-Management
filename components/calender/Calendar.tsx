@@ -58,7 +58,7 @@ const Calendar: React.FC<{ transactions: Transaction[] }> = ({
   return (
     <Card>
       <CardHeader>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mb-2">
           <button
             onClick={() =>
               setCurrentDate(
@@ -86,7 +86,7 @@ const Calendar: React.FC<{ transactions: Transaction[] }> = ({
                 )
               )
             }
-            className="p-2 bg-gray-100 rounded"
+            className="p-2 mr-4 bg-gray-100 rounded"
           >
             {">"}
           </button>
