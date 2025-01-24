@@ -60,7 +60,7 @@ const Days = ({
             return (
               <div
                 key={index}
-                className={`border p-2 pt-0 min-h-[70px] relative ${
+                className={`border  pt-0 min-h-[70px] relative ${
                   day ? "cursor-pointer hover:bg-gray-100" : ""
                 }`}
                 onClick={() => day && handleDayClick(day)}
