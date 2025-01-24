@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
 import { Separator } from "@/components/ui/separator";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,14 +26,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-full w-full overflow-hidden`}
-      >
-        <Header />
-        <Separator />
-        <main className="h-screen w-full ">{children}</main>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="ja">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased h-full w-full overflow-hidden`}
+        >
+          <Header />
+          <Separator />
+          <main className="h-screen w-full ">{children}</main>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
