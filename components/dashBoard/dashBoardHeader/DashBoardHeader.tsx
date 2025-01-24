@@ -23,7 +23,7 @@ const DashBoardHeader = () => {
   };
 
   return (
-    <div className="w-full py-8 ">
+    <div className="w-full pt-4 sm:pt-8 pb-4">
       {/* 総合ダッシュボード */}
       <DashboardCard transactions={transactions} balance={balance} />
       {/* 取引追加ボタン */}

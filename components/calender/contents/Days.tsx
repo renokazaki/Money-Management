@@ -70,12 +70,12 @@ const Days = ({
                     <div className="text-[9px] sm:text-xs">{day.getDate()}</div>
                     {/* 収入か支出があれば表示 */}
                     {incomeAmount > 0 && (
-                      <div className="text-[9px] sm:text-xs mx-auto font-bold mt-1 text-green-500">
+                      <div className="text-[9px] sm:text-sm mx-auto font-bold mt-1 text-green-500">
                         {incomeAmount.toLocaleString()}円
                       </div>
                     )}
                     {expenseAmount > 0 && (
-                      <div className="text-[9px] sm:text-xs mx-auto font-bold mt-1 text-red-500">
+                      <div className="text-[9px] sm:text-sm mx-auto font-bold mt-1 text-red-500">
                         {expenseAmount.toLocaleString()}円
                       </div>
                     )}
