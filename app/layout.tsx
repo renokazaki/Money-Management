@@ -31,9 +31,7 @@ export default function RootLayout({
       >
         <Header />
         <Separator />
-        <main className="h-screen w-full flex justify-center item-center">
-          {children}
-        </main>
+        <main className="h-screen w-full ">{children}</main>
       </body>
     </html>
   );

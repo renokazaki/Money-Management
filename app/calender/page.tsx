@@ -32,7 +32,7 @@ const CalenderPage = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="w-full mt-28 p-2">
       <Calender transactions={transactions} />
     </div>
   );

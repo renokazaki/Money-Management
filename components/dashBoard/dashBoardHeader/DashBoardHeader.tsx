@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { Transaction } from "@/types/type";
 import { Button } from "@/components/ui/button";
@@ -5,12 +6,10 @@ import { PlusCircle } from "lucide-react";
 import DashboardCard from "./DashBoardCard";
 import AddTransactionModal from "./AddTransactionModal";
 
-const DashBoardHeader: React.FC<{
-  transactions: Transaction[];
-  setTransactions: React.Dispatch<React.SetStateAction<Transaction[]>>;
-}> = ({ transactions, setTransactions }) => {
+const DashBoardHeader = () => {
   const [showModal, setShowModal] = useState(false);
   const [balance, setBalance] = useState<number>(0);
+  const [transactions, setTransactions] = useState<Transaction[]>([]);
 
   // 新規取引追加ハンドラ
   const addTransaction = (transaction: Transaction) => {
@@ -24,13 +23,13 @@ const DashBoardHeader: React.FC<{
   };
 
   return (
-    <div className="w-full py-12">
+    <div className="w-full py-8 mx-4">
       {/* 総合ダッシュボード */}
       <DashboardCard transactions={transactions} balance={balance} />
       {/* 取引追加ボタン */}
       <Button
         variant="outline"
-        className="flex items-center justify-center mb-4 bg-blue-300"
+        className=" bg-blue-300"
         onClick={() => setShowModal(true)}
       >
         <PlusCircle className="mr-2" /> 取引を追加
