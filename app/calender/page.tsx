@@ -32,7 +32,7 @@ const CalenderPage = () => {
   ];
 
   return (
-    <div className="w-full mt-28 p-2">
+    <div className="w-full mt-8 sm:mt-28 p-2 sm:px-8">
       <Calender transactions={transactions} />
     </div>
   );
