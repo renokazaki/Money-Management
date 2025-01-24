@@ -151,7 +151,7 @@ export function Graph() {
   });
 
   return (
-    <Card className="mx-4">
+    <Card className="mx-4 sm:h-[680px]">
       <CardHeader className="flex items-center gap-2 space-y-0 border-b py-5 sm:flex-row">
         <div className="grid flex-1 gap-1 text-center sm:text-left">
           <CardTitle>Area Chart - Interactive</CardTitle>
@@ -179,10 +179,10 @@ export function Graph() {
           </SelectContent>
         </Select>
       </CardHeader>
-      <CardContent className="px-2 pt-4 sm:px-6 sm:pt-6">
+      <CardContent className="px-2 pt-4 sm:px-6 sm:pt-6 ">
         <ChartContainer
           config={chartConfig}
-          className="aspect-auto h-[250px] w-full"
+          className="aspect-auto h-[250px] w-full sm:h-[560px]"
         >
           <AreaChart data={filteredData}>
             <defs>
@@ -254,7 +254,7 @@ export function Graph() {
               stroke="var(--color-desktop)"
               stackId="a"
             />
-            <ChartLegend content={<ChartLegendContent />} />
+            <ChartLegend content={<ChartLegendContent />} className="mt-4" />
           </AreaChart>
         </ChartContainer>
       </CardContent>

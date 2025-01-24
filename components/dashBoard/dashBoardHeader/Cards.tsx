@@ -9,7 +9,7 @@ const Cards: React.FC<{
   color: string;
 }> = ({ title, amount, icon, color }) => {
   return (
-    <Card className={`rounded-lg bg-${color}-100 shadow-md`}>
+    <Card className={`rounded-lg bg-${color}-100 shadow-md p-2 sm:p-8`}>
       <h3 className="flex gap-2 text-xs sm:text-xl font-semibold text-gray-700">
         {title}
         <span className="flex items-center mb-2">{icon}</span>

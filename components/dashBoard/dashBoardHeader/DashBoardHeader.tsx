@@ -23,13 +23,13 @@ const DashBoardHeader = () => {
   };
 
   return (
-    <div className="w-full py-8 mx-4">
+    <div className="w-full py-8 ">
       {/* 総合ダッシュボード */}
       <DashboardCard transactions={transactions} balance={balance} />
       {/* 取引追加ボタン */}
       <Button
         variant="outline"
-        className=" bg-blue-300"
+        className="ml-4 bg-blue-300"
         onClick={() => setShowModal(true)}
       >
         <PlusCircle className="mr-2" /> 取引を追加
