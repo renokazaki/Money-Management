@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Transaction } from "@/types/type";
 import { Button } from "@/components/ui/button";
 import { PlusCircle } from "lucide-react";
-import AddTransactionModal from "../modal/AddTransactionModal";
 import DashboardCard from "./DashBoardCard";
+import AddTransactionModal from "./AddTransactionModal";
 
-const DashBoard: React.FC<{
+const DashBoardHeader: React.FC<{
   transactions: Transaction[];
   setTransactions: React.Dispatch<React.SetStateAction<Transaction[]>>;
 }> = ({ transactions, setTransactions }) => {
@@ -24,13 +24,13 @@ const DashBoard: React.FC<{
   };
 
   return (
-    <div>
+    <div className="w-full py-12">
       {/* 総合ダッシュボード */}
       <DashboardCard transactions={transactions} balance={balance} />
       {/* 取引追加ボタン */}
       <Button
         variant="outline"
-        className="flex items-center mb-4 bg-blue-300"
+        className="flex items-center justify-center mb-4 bg-blue-300"
         onClick={() => setShowModal(true)}
       >
         <PlusCircle className="mr-2" /> 取引を追加
@@ -46,4 +46,4 @@ const DashBoard: React.FC<{
   );
 };
 
-export default DashBoard;
+export default DashBoardHeader;

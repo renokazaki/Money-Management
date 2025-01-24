@@ -33,7 +33,7 @@ const DashboardCard: React.FC<DashboardProps> = ({ transactions, balance }) => {
     .reduce((sum, t) => sum + t.amount, 0);
 
   return (
-    <div className="grid grid-cols-3 gap-4 mb-4">
+    <div className="flex justify-center item-center gap-4 mb-4">
       <Cards
         title="現在の残高"
         amount={balance}
