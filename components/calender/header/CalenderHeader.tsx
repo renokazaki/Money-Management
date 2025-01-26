@@ -17,7 +17,7 @@ const CalenderHeader = ({
               new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1)
             )
           }
-          className="p-2 bg-gray-100 rounded"
+          className="p-2 bg-gray-100 rounded  text-black"
         >
           {"<"}
         </button>
@@ -30,7 +30,7 @@ const CalenderHeader = ({
               new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1)
             )
           }
-          className="p-2  bg-gray-100 rounded"
+          className="p-2  bg-gray-100 rounded  text-black"
         >
           {">"}
         </button>

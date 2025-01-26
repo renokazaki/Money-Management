@@ -29,7 +29,7 @@ const DashBoardHeader = () => {
       {/* 取引追加ボタン */}
       <Button
         variant="outline"
-        className="ml-4 bg-blue-300"
+        className="ml-4 bg-blue-800"
         onClick={() => setShowModal(true)}
       >
         <PlusCircle className="mr-2" /> 取引を追加

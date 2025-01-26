@@ -26,110 +26,110 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 const chartData = [
-  { date: "2024-04-01", desktop: 222, mobile: 150 },
-  { date: "2024-04-02", desktop: 97, mobile: 180 },
-  { date: "2024-04-03", desktop: 167, mobile: 120 },
-  { date: "2024-04-04", desktop: 242, mobile: 260 },
-  { date: "2024-04-05", desktop: 373, mobile: 290 },
-  { date: "2024-04-06", desktop: 301, mobile: 340 },
-  { date: "2024-04-07", desktop: 245, mobile: 180 },
-  { date: "2024-04-08", desktop: 409, mobile: 320 },
-  { date: "2024-04-09", desktop: 59, mobile: 110 },
-  { date: "2024-04-10", desktop: 261, mobile: 190 },
-  { date: "2024-04-11", desktop: 327, mobile: 350 },
-  { date: "2024-04-12", desktop: 292, mobile: 210 },
-  { date: "2024-04-13", desktop: 342, mobile: 380 },
-  { date: "2024-04-14", desktop: 137, mobile: 220 },
-  { date: "2024-04-15", desktop: 120, mobile: 170 },
-  { date: "2024-04-16", desktop: 138, mobile: 190 },
-  { date: "2024-04-17", desktop: 446, mobile: 360 },
-  { date: "2024-04-18", desktop: 364, mobile: 410 },
-  { date: "2024-04-19", desktop: 243, mobile: 180 },
-  { date: "2024-04-20", desktop: 89, mobile: 150 },
-  { date: "2024-04-21", desktop: 137, mobile: 200 },
-  { date: "2024-04-22", desktop: 224, mobile: 170 },
-  { date: "2024-04-23", desktop: 138, mobile: 230 },
-  { date: "2024-04-24", desktop: 387, mobile: 290 },
-  { date: "2024-04-25", desktop: 215, mobile: 250 },
-  { date: "2024-04-26", desktop: 75, mobile: 130 },
-  { date: "2024-04-27", desktop: 383, mobile: 420 },
-  { date: "2024-04-28", desktop: 122, mobile: 180 },
-  { date: "2024-04-29", desktop: 315, mobile: 240 },
-  { date: "2024-04-30", desktop: 454, mobile: 380 },
-  { date: "2024-05-01", desktop: 165, mobile: 220 },
-  { date: "2024-05-02", desktop: 293, mobile: 310 },
-  { date: "2024-05-03", desktop: 247, mobile: 190 },
-  { date: "2024-05-04", desktop: 385, mobile: 420 },
-  { date: "2024-05-05", desktop: 481, mobile: 390 },
-  { date: "2024-05-06", desktop: 498, mobile: 520 },
-  { date: "2024-05-07", desktop: 388, mobile: 300 },
-  { date: "2024-05-08", desktop: 149, mobile: 210 },
-  { date: "2024-05-09", desktop: 227, mobile: 180 },
-  { date: "2024-05-10", desktop: 293, mobile: 330 },
-  { date: "2024-05-11", desktop: 335, mobile: 270 },
-  { date: "2024-05-12", desktop: 197, mobile: 240 },
-  { date: "2024-05-13", desktop: 197, mobile: 160 },
-  { date: "2024-05-14", desktop: 448, mobile: 490 },
-  { date: "2024-05-15", desktop: 473, mobile: 380 },
-  { date: "2024-05-16", desktop: 338, mobile: 400 },
-  { date: "2024-05-17", desktop: 499, mobile: 420 },
-  { date: "2024-05-18", desktop: 315, mobile: 350 },
-  { date: "2024-05-19", desktop: 235, mobile: 180 },
-  { date: "2024-05-20", desktop: 177, mobile: 230 },
-  { date: "2024-05-21", desktop: 82, mobile: 140 },
-  { date: "2024-05-22", desktop: 81, mobile: 120 },
-  { date: "2024-05-23", desktop: 252, mobile: 290 },
-  { date: "2024-05-24", desktop: 294, mobile: 220 },
-  { date: "2024-05-25", desktop: 201, mobile: 250 },
-  { date: "2024-05-26", desktop: 213, mobile: 170 },
-  { date: "2024-05-27", desktop: 420, mobile: 460 },
-  { date: "2024-05-28", desktop: 233, mobile: 190 },
-  { date: "2024-05-29", desktop: 78, mobile: 130 },
-  { date: "2024-05-30", desktop: 340, mobile: 280 },
-  { date: "2024-05-31", desktop: 178, mobile: 230 },
-  { date: "2024-06-01", desktop: 178, mobile: 200 },
-  { date: "2024-06-02", desktop: 470, mobile: 410 },
-  { date: "2024-06-03", desktop: 103, mobile: 160 },
-  { date: "2024-06-04", desktop: 439, mobile: 380 },
-  { date: "2024-06-05", desktop: 88, mobile: 140 },
-  { date: "2024-06-06", desktop: 294, mobile: 250 },
-  { date: "2024-06-07", desktop: 323, mobile: 370 },
-  { date: "2024-06-08", desktop: 385, mobile: 320 },
-  { date: "2024-06-09", desktop: 438, mobile: 480 },
-  { date: "2024-06-10", desktop: 155, mobile: 200 },
-  { date: "2024-06-11", desktop: 92, mobile: 150 },
-  { date: "2024-06-12", desktop: 492, mobile: 420 },
-  { date: "2024-06-13", desktop: 81, mobile: 130 },
-  { date: "2024-06-14", desktop: 426, mobile: 380 },
-  { date: "2024-06-15", desktop: 307, mobile: 350 },
-  { date: "2024-06-16", desktop: 371, mobile: 310 },
-  { date: "2024-06-17", desktop: 475, mobile: 520 },
-  { date: "2024-06-18", desktop: 107, mobile: 170 },
-  { date: "2024-06-19", desktop: 341, mobile: 290 },
-  { date: "2024-06-20", desktop: 408, mobile: 450 },
-  { date: "2024-06-21", desktop: 169, mobile: 210 },
-  { date: "2024-06-22", desktop: 317, mobile: 270 },
-  { date: "2024-06-23", desktop: 480, mobile: 530 },
-  { date: "2024-06-24", desktop: 132, mobile: 180 },
-  { date: "2024-06-25", desktop: 141, mobile: 190 },
-  { date: "2024-06-26", desktop: 434, mobile: 380 },
-  { date: "2024-06-27", desktop: 448, mobile: 490 },
-  { date: "2024-06-28", desktop: 149, mobile: 200 },
-  { date: "2024-06-29", desktop: 103, mobile: 160 },
-  { date: "2024-06-30", desktop: 446, mobile: 400 },
+  { date: "2024-04-01", 支出: 222, 収入: 150 },
+  { date: "2024-04-02", 支出: 97, 収入: 180 },
+  { date: "2024-04-03", 支出: 167, 収入: 120 },
+  { date: "2024-04-04", 支出: 242, 収入: 260 },
+  { date: "2024-04-05", 支出: 373, 収入: 290 },
+  { date: "2024-04-06", 支出: 301, 収入: 340 },
+  { date: "2024-04-07", 支出: 245, 収入: 180 },
+  { date: "2024-04-08", 支出: 409, 収入: 320 },
+  { date: "2024-04-09", 支出: 59, 収入: 110 },
+  { date: "2024-04-10", 支出: 261, 収入: 190 },
+  { date: "2024-04-11", 支出: 327, 収入: 350 },
+  { date: "2024-04-12", 支出: 292, 収入: 210 },
+  { date: "2024-04-13", 支出: 342, 収入: 380 },
+  { date: "2024-04-14", 支出: 137, 収入: 220 },
+  { date: "2024-04-15", 支出: 120, 収入: 170 },
+  { date: "2024-04-16", 支出: 138, 収入: 190 },
+  { date: "2024-04-17", 支出: 446, 収入: 360 },
+  { date: "2024-04-18", 支出: 364, 収入: 410 },
+  { date: "2024-04-19", 支出: 243, 収入: 180 },
+  { date: "2024-04-20", 支出: 89, 収入: 150 },
+  { date: "2024-04-21", 支出: 137, 収入: 200 },
+  { date: "2024-04-22", 支出: 224, 収入: 170 },
+  { date: "2024-04-23", 支出: 138, 収入: 230 },
+  { date: "2024-04-24", 支出: 387, 収入: 290 },
+  { date: "2024-04-25", 支出: 215, 収入: 250 },
+  { date: "2024-04-26", 支出: 75, 収入: 130 },
+  { date: "2024-04-27", 支出: 383, 収入: 420 },
+  { date: "2024-04-28", 支出: 122, 収入: 180 },
+  { date: "2024-04-29", 支出: 315, 収入: 240 },
+  { date: "2024-04-30", 支出: 454, 収入: 380 },
+  { date: "2024-05-01", 支出: 165, 収入: 220 },
+  { date: "2024-05-02", 支出: 293, 収入: 310 },
+  { date: "2024-05-03", 支出: 247, 収入: 190 },
+  { date: "2024-05-04", 支出: 385, 収入: 420 },
+  { date: "2024-05-05", 支出: 481, 収入: 390 },
+  { date: "2024-05-06", 支出: 498, 収入: 520 },
+  { date: "2024-05-07", 支出: 388, 収入: 300 },
+  { date: "2024-05-08", 支出: 149, 収入: 210 },
+  { date: "2024-05-09", 支出: 227, 収入: 180 },
+  { date: "2024-05-10", 支出: 293, 収入: 330 },
+  { date: "2024-05-11", 支出: 335, 収入: 270 },
+  { date: "2024-05-12", 支出: 197, 収入: 240 },
+  { date: "2024-05-13", 支出: 197, 収入: 160 },
+  { date: "2024-05-14", 支出: 448, 収入: 490 },
+  { date: "2024-05-15", 支出: 473, 収入: 380 },
+  { date: "2024-05-16", 支出: 338, 収入: 400 },
+  { date: "2024-05-17", 支出: 499, 収入: 420 },
+  { date: "2024-05-18", 支出: 315, 収入: 350 },
+  { date: "2024-05-19", 支出: 235, 収入: 180 },
+  { date: "2024-05-20", 支出: 177, 収入: 230 },
+  { date: "2024-05-21", 支出: 82, 収入: 140 },
+  { date: "2024-05-22", 支出: 81, 収入: 120 },
+  { date: "2024-05-23", 支出: 252, 収入: 290 },
+  { date: "2024-05-24", 支出: 294, 収入: 220 },
+  { date: "2024-05-25", 支出: 201, 収入: 250 },
+  { date: "2024-05-26", 支出: 213, 収入: 170 },
+  { date: "2024-05-27", 支出: 420, 収入: 460 },
+  { date: "2024-05-28", 支出: 233, 収入: 190 },
+  { date: "2024-05-29", 支出: 78, 収入: 130 },
+  { date: "2024-05-30", 支出: 340, 収入: 280 },
+  { date: "2024-05-31", 支出: 178, 収入: 230 },
+  { date: "2024-06-01", 支出: 178, 収入: 200 },
+  { date: "2024-06-02", 支出: 470, 収入: 410 },
+  { date: "2024-06-03", 支出: 103, 収入: 160 },
+  { date: "2024-06-04", 支出: 439, 収入: 380 },
+  { date: "2024-06-05", 支出: 88, 収入: 140 },
+  { date: "2024-06-06", 支出: 294, 収入: 250 },
+  { date: "2024-06-07", 支出: 323, 収入: 370 },
+  { date: "2024-06-08", 支出: 385, 収入: 320 },
+  { date: "2024-06-09", 支出: 438, 収入: 480 },
+  { date: "2024-06-10", 支出: 155, 収入: 200 },
+  { date: "2024-06-11", 支出: 92, 収入: 150 },
+  { date: "2024-06-12", 支出: 492, 収入: 420 },
+  { date: "2024-06-13", 支出: 81, 収入: 130 },
+  { date: "2024-06-14", 支出: 426, 収入: 380 },
+  { date: "2024-06-15", 支出: 307, 収入: 350 },
+  { date: "2024-06-16", 支出: 371, 収入: 310 },
+  { date: "2024-06-17", 支出: 475, 収入: 520 },
+  { date: "2024-06-18", 支出: 107, 収入: 170 },
+  { date: "2024-06-19", 支出: 341, 収入: 290 },
+  { date: "2024-06-20", 支出: 408, 収入: 450 },
+  { date: "2024-06-21", 支出: 169, 収入: 210 },
+  { date: "2024-06-22", 支出: 317, 収入: 270 },
+  { date: "2024-06-23", 支出: 480, 収入: 530 },
+  { date: "2024-06-24", 支出: 132, 収入: 180 },
+  { date: "2024-06-25", 支出: 141, 収入: 190 },
+  { date: "2024-06-26", 支出: 434, 収入: 380 },
+  { date: "2024-06-27", 支出: 448, 収入: 490 },
+  { date: "2024-06-28", 支出: 149, 収入: 200 },
+  { date: "2024-06-29", 支出: 103, 収入: 160 },
+  { date: "2024-06-30", 支出: 446, 収入: 400 },
 ];
 
 const chartConfig = {
   visitors: {
     label: "Visitors",
   },
-  desktop: {
-    label: "Desktop",
+  支出: {
+    label: "支出",
     color: "hsl(var(--chart-1))",
   },
-  mobile: {
-    label: "Mobile",
-    color: "hsl(var(--chart-2))",
+  収入: {
+    label: "収入",
+    color: "hsl(var(--chart-5))",
   },
 } satisfies ChartConfig;
 
@@ -186,27 +186,27 @@ export function Graph() {
         >
           <AreaChart data={filteredData}>
             <defs>
-              <linearGradient id="fillDesktop" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="fill支出" x1="0" y1="0" x2="0" y2="1">
                 <stop
                   offset="5%"
-                  stopColor="var(--color-desktop)"
+                  stopColor="var(--color-支出)"
                   stopOpacity={0.8}
                 />
                 <stop
                   offset="95%"
-                  stopColor="var(--color-desktop)"
+                  stopColor="var(--color-支出)"
                   stopOpacity={0.1}
                 />
               </linearGradient>
-              <linearGradient id="fillMobile" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="fill収入" x1="0" y1="0" x2="0" y2="1">
                 <stop
                   offset="5%"
-                  stopColor="var(--color-mobile)"
+                  stopColor="var(--color-収入)"
                   stopOpacity={0.8}
                 />
                 <stop
                   offset="95%"
-                  stopColor="var(--color-mobile)"
+                  stopColor="var(--color-収入)"
                   stopOpacity={0.1}
                 />
               </linearGradient>
@@ -241,17 +241,17 @@ export function Graph() {
               }
             />
             <Area
-              dataKey="mobile"
+              dataKey="支出"
               type="natural"
-              fill="url(#fillMobile)"
-              stroke="var(--color-mobile)"
+              fill="url(#fill収入)"
+              stroke="var(--color-収入)"
               stackId="a"
             />
             <Area
-              dataKey="desktop"
+              dataKey="収入"
               type="natural"
-              fill="url(#fillDesktop)"
-              stroke="var(--color-desktop)"
+              fill="url(#fill支出)"
+              stroke="var(--color-支出)"
               stackId="a"
             />
             <ChartLegend content={<ChartLegendContent />} className="mt-4" />
