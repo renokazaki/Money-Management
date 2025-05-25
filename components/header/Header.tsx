@@ -4,10 +4,10 @@ import React from "react";
 import {
   SignedIn,
   SignedOut,
-  SignInButton,
   UserButton,
   useUser,
 } from "@clerk/nextjs";
+import GuestLogin from "@/app/(auth)/GuestLogin";
 const Header = () => {
   const { user } = useUser(); // Clerkからユーザー情報を取得
 
@@ -18,7 +18,7 @@ const Header = () => {
           <UserButton />
         </SignedIn>
         <SignedOut>
-          <SignInButton />
+          <GuestLogin />
         </SignedOut>
         {user && (user.username || user.fullName || "User")}
       </div>
